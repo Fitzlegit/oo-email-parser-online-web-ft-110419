@@ -11,9 +11,9 @@ class EmailAddressParser
     @emails = emails
   end
 
-  def parse(csv_emails)
+  def parse
     
-    rows = csv_emails.split(',').gsub(' ')
+    rows = self.split(',').gsub(' ')
     rows.collect do |data|
       @email = data
     end
