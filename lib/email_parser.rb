@@ -7,25 +7,14 @@ class EmailAddressParser
   
   attr_reader :email
 
- # def initialize 
-  #  @emails = emails
- # end
-
- # def parse
-    
-  #  rows = self.split(',').gsub(' ')
-  #  rows.collect do |data|
-  #    @email = data
-  #  end
-   # @email
-  #end
-
-  def initialize(emails)
+  def initialize 
     @emails = emails
   end
 
   def parse
-    @emails.split(/, | /).uniq
+  self.split(',').gsub(' ')
   end
+
+
   
 end
