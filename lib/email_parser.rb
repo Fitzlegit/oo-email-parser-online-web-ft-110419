@@ -7,6 +7,7 @@ class EmailAddressParser
   attr_accessor
   
   def parse
+    rows = self.split(',')
     
   end
   
