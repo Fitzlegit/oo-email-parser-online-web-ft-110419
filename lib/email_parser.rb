@@ -5,8 +5,8 @@ require 'pry'
 # or whitespace (' ').
 class EmailAddressParser
   
-  attr_accessor
-  binding.pry
+  attr_accessor :email
+
   def parse
     rows = self.split(',')
     
