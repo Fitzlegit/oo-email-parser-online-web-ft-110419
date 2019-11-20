@@ -8,8 +8,11 @@ class EmailAddressParser
   attr_accessor :email
 
   def parse
-    rows = self.split(',')
-    
+    rows = self.split(',').gsub(' ')
+    rows.collect do |data|
+      @email = data
+    end
+    @email
   end
   
   
