@@ -5,10 +5,11 @@ require 'pry'
 # or whitespace (' ').
 class EmailAddressParser
   
-  attr_accessor :email
+  attr_reader :email
 
   def initialize 
-    @emails = emails]
+    @emails = emails
+  end
 
   def parse(csv_emails)
     
